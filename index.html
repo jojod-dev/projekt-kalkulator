@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Kalkulator</h1>
+    </header>
+
+        <nav class="Kalkulator">
+            <input type="text" id="wynik" readonly>
+            <section class="przyciski">
+                <button onclick="wyczysc('C')" class="wyczysc">C</button>
+                <button onclick="znak('/')" class="obliczenia">/</button>
+                <button onclick="znak('*')" class="obliczenia">*</button>
+                <button onclick="znak('-')" class="obliczenia">-</button>
+                <button onclick="znak('7')" class="liczba">7</button>
+                <button onclick="znak('8')" class="liczba">8</button>
+                <button onclick="znak('9')" class="liczba">9</button>
+                <button onclick="znak('+')" class="obliczenia">+</button>
+                <button onclick="znak('4')" class="liczba">4</button>
+                <button onclick="znak('5')" class="liczba">5</button>
+                <button onclick="znak('6')" class="liczba">6</button>
+                <button onclick="policz('=')" class="równa">=</button>
+                <button onclick="znak('1')" class="liczba">1</button>
+                <button onclick="znak('2')" class="liczba">2</button>
+                <button onclick="znak('3')" class="liczba">3</button>
+                <button onclick="usun('CE')" class="usun">CE</button>
+                <button onclick="znak('0')" class="liczba">0</button>
+                <button onclick="znak('.')" class="liczba">.</button>
+            </section>
+        </nav>
+
+    <footer>
+        <h5>autor: Jakub Garnyś 4ti</h2>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
