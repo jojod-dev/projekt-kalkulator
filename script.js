@@ -15,7 +15,15 @@ function wyczysc() {
 }
 
 function policz(){
-    blok.value = eval(blok.value);
-}
+    let wynik = eval(blok.value);
 
+    if (wynik === Infinity) {
+        blok.value = "0";
+    }
+
+    else if (wynik === -Infinity) {
+        blok.value = "0";
+    }
+
+}
 
