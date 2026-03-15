@@ -2,6 +2,7 @@ const blok = document.getElementById('wynik');
 
 function znak(input){
     blok.value += input;
+    zmienszjanie();
 }
 
 function usun(){
@@ -17,16 +18,29 @@ function wyczysc() {
 function policz(){
     let wynik = eval(blok.value);
 
-     if (wynik === Infinity) {
-        blok.value = "0";
+     if (wynik === Infinity || wynik === -Infinity) {
+        alert("nie mozna dzielic przez 0")
+        blok.value = "";
     }
 
-    else if (wynik === -Infinity) {
-        blok.value = "0";
-    }
     else {
         blok.value = wynik;
     }
 
 }
 
+function zmienszjanie() {
+    let dlugosc = blok.value.length;
+    
+    if( dlugosc >14){
+        blok.style.fontSize = "40px";
+    }
+
+    if( dlugosc >18){
+        blok.style.fontSize = "30px";
+    }
+
+    if( dlugosc >25){
+        blok.style.fontSize = "20px";
+    }
+}
