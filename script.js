@@ -7,6 +7,7 @@ function znak(input){
 
 function usun(){
     blok.value = "";
+    blok.style.fontSize = "52px"
 }
 
 function wyczysc() {
@@ -20,6 +21,11 @@ function policz(){
 
      if (wynik === Infinity || wynik === -Infinity) {
         alert("nie mozna dzielic przez 0")
+        blok.value = "";
+    }
+
+    else if (wynik === undefined){ 
+        alert ("nie mozesz wpisac samego =")
         blok.value = "";
     }
 
