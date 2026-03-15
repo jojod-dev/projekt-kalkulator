@@ -3,6 +3,16 @@ const blok = document.getElementById('wynik');
 function znak(input){
     blok.value += input;
     zmienszjanie();
+    
+    if ( blok.value.includes("++")||
+    blok.value.includes("--")||
+    blok.value.includes("**")||
+    blok.value.includes("//") ) {
+         alert ("nie mozesz wpisac dwóch operatorw na raz");
+         blok.value = blok.value.slice(0, -1);
+    }
+       
+    
 }
 
 function usun(){
